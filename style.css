@@ -103,3 +103,74 @@ h2 {
   color: white;
   padding: 18px 0;
 }
+
+/* WORDS SECTION */
+.words-section {
+    padding: 60px 20px;
+    background: #f7eac2;   /* màu nền vàng nhạt giống ảnh */
+}
+
+.words-container {
+    background: #8d1f14;   /* màu đỏ nâu đặc trưng */
+    color: white;
+    padding: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.words-left {
+    width: 60%;
+}
+
+.words-title {
+    font-size: 80px;
+    font-family: "Times New Roman", serif;
+    font-weight: 300;
+    color: #f7eac2;
+    margin: 0 0 20px 0;
+}
+
+.words-text {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #f8e4c5;
+}
+
+.words-source {
+    font-size: 14px;
+    font-style: italic;
+    text-align: right;
+    opacity: 0.8;
+}
+
+/* IMAGE */
+.words-right {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.words-img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .words-container {
+        flex-direction: column;
+    }
+    .words-left, .words-right {
+        width: 100%;
+    }
+    .words-title {
+        font-size: 60px;
+        text-align: center;
+    }
+}
+
